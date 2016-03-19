@@ -1,0 +1,43 @@
+/////////////////////////////
+// C O L O R S
+/////////////////////////////
+// base
+$dark:   #15171E;
+$white:  mix($dark, white, 20%);
+$red:    #FD0000;
+$dutch:  #FD7300;
+$orange: #FDA800;
+$melon:  #FDD100;
+$citron: #FDFD00;
+$lime:   #9DEC00;
+$leaf:   #00CA00;
+$teal:   #009797;
+$marine: #113FA9;
+$lila:   #3813AD;
+$purple: #A0038B;
+$pink:   #CB0073;
+
+// shapes
+$dark-muted: mix(white, $dark, 25%);
+$darker: mix(black, $dark, 25%);
+
+$colors:
+  $red,
+  $dutch,
+  $orange,
+  $melon,
+  $citron,
+  $lime,
+  $leaf,
+  $teal,
+  $marine,
+  $lila,
+  $purple,
+  $pink;
+
+
+/////////////////////////////
+// U N I T S
+/////////////////////////////
+
+$max-width: 70rem;

@@ -1,0 +1,577 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../fonts/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_monoregular';
+  src: url("../fonts/robotomono-regular-webfont.eot");
+  src: url("../fonts/robotomono-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotomono-regular-webfont.woff2") format("woff2"), url("../fonts/robotomono-regular-webfont.woff") format("woff"), url("../fonts/robotomono-regular-webfont.ttf") format("truetype"), url("../fonts/robotomono-regular-webfont.svg#roboto_monoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'roboto_monobold';
+  src: url("../fonts/robotomono-bold-webfont.eot");
+  src: url("../fonts/robotomono-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotomono-bold-webfont.woff2") format("woff2"), url("../fonts/robotomono-bold-webfont.woff") format("woff"), url("../fonts/robotomono-bold-webfont.ttf") format("truetype"), url("../fonts/robotomono-bold-webfont.svg#roboto_monobold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 3, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 11, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+html,
+body {
+  width: 100%;
+  background-color: #15171E; }
+
+/* line 17, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+body {
+  position: relative;
+  font-family: 'roboto_monoregular', Arial, sans-serif;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #d0d1d2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media only screen and (min-width: 500px) {
+    /* line 17, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+    body {
+      font-size: 1rem;
+      line-height: 1.6rem; } }
+
+/* line 30, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'roboto_monobold', Arial, sans-serif;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 39, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem; }
+
+/* line 44, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+h6 {
+  font-size: 0.8rem; }
+  @media only screen and (min-width: 500px) {
+    /* line 44, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+    h6 {
+      font-size: 1rem;
+      line-height: 1.6rem; } }
+
+/* line 55, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+ul {
+  list-style-type: none; }
+
+/* line 59, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+p {
+  margin-bottom: 1rem; }
+
+/* line 63, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+a {
+  position: relative;
+  color: #d0d1d2;
+  text-decoration: none;
+  -webkit-animation: 0.5s linear 0s infinite normal both paused hueShift;
+          animation: 0.5s linear 0s infinite normal both paused hueShift;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s; }
+  /* line 70, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+  a:hover {
+    color: #FD0000;
+    -webkit-animation-play-state: running;
+            animation-play-state: running; }
+
+/* line 76, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+.muted {
+  color: #505156; }
+
+/* line 80, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+em {
+  font-style: normal;
+  color: #FDA800; }
+
+/* line 134, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+.cta {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-family: 'roboto_monobold', Arial, sans-serif;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: normal;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FD0000), to(#FDFD00)), -webkit-gradient(linear, left top, left bottom, from(#FDFD00), to(#00CA00)), -webkit-gradient(linear, left top, right top, from(#3813AD), to(#00CA00)), -webkit-gradient(linear, left top, left bottom, from(#FD0000), to(#3813AD));
+  background-image: linear-gradient(90deg, #FD0000, #FDFD00), linear-gradient(#FDFD00, #00CA00), linear-gradient(90deg, #3813AD, #00CA00), linear-gradient(#FD0000, #3813AD);
+  background-size: 100% 3px, 3px 90%, 100% 3px, 3px 90%;
+  background-position: 0 0, 100% 50%, 0 100%, 0 50%;
+  background-repeat: no-repeat;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  -webkit-animation: 0.5s linear 0s infinite normal both paused hueShift;
+          animation: 0.5s linear 0s infinite normal both paused hueShift;
+  -webkit-transition: background-size 0.1s;
+  transition: background-size 0.1s; }
+  /* line 160, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_global.scss */
+  .cta:hover {
+    color: #d0d1d2;
+    background-size: 100% 6px, 6px 90%, 100% 6px, 6px 90%;
+    -webkit-animation-play-state: running;
+            animation-play-state: running; }
+
+@-webkit-keyframes hueShift {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg); } }
+
+@keyframes hueShift {
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg); } }
+
+/* line 1, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+*[class*="section-"] {
+  position: relative;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #15171E), color-stop(20%, rgba(21, 23, 30, 0))), -webkit-gradient(linear, left top, left bottom, from(rgba(21, 23, 30, 0)), color-stop(90%, #15171E)), -webkit-gradient(linear, left top, left bottom, from(#505156), to(#505156));
+  background-image: linear-gradient(#15171E 20%, rgba(21, 23, 30, 0)), linear-gradient(rgba(21, 23, 30, 0), #15171E 90%), linear-gradient(#505156, #505156);
+  background-size: 10px 10rem, 10px 10rem, 1px 100%;
+  background-position: 50% 0, 50% 100%, 50% 50%;
+  background-repeat: no-repeat; }
+
+/* line 20, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1rem; }
+  @media only screen and (min-width: 500px) {
+    /* line 20, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+    .content {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+
+@media only screen and (min-width: 500px) {
+  /* line 34, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+  *[class*="col-"] {
+    width: 50%; } }
+
+/* line 41, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+.copy {
+  margin-bottom: 6rem; }
+  /* line 44, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+  .copy:last-child {
+    margin-bottom: 0; }
+
+/* line 49, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+.copy-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #505156; }
+
+/* line 54, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+.col-left .copy h3,
+.col-left .copy h6,
+.col-left .copy ul,
+.col-left .copy p {
+  padding-right: 2rem; }
+
+/* line 61, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+.col-right .copy h3,
+.col-right .copy h6,
+.col-right .copy ul,
+.col-right .copy p {
+  padding-left: 2rem; }
+
+/* line 69, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+.events-list {
+  margin-bottom: 2.5rem; }
+
+/* line 73, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+.events-list li {
+  position: relative;
+  padding-left: 1rem; }
+  /* line 77, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+  .events-list li:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #d0d1d2; }
+
+/* line 89, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_content.scss */
+.events-list.muted li:before {
+  background-color: #505156; }
+
+/* line 1, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.2); }
+
+/* line 18, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+.page-titel {
+  font-size: 0;
+  line-height: 0;
+  text-indent: 9999999px;
+  overflow: hidden;
+  display: block;
+  width: 85px;
+  height: 40px;
+  background-image: url(../media/nerddisco-logo.svg);
+  background-size: auto 100%;
+  background-position: 0 50%;
+  background-repeat: no-repeat; }
+
+/* line 29, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+.page-nav {
+  position: relative; }
+
+/* line 33, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+.page-nav ul li {
+  display: inline-block;
+  padding-right: 0.2rem; }
+  @media only screen and (min-width: 500px) {
+    /* line 33, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+    .page-nav ul li {
+      padding-right: 1rem; } }
+
+/* line 42, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+.page-nav ul li a {
+  position: relative; }
+  /* line 45, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+  .page-nav ul li a:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -0.4rem;
+    left: 0;
+    height: 1px;
+    background-color: #505156;
+    opacity: 0;
+    -webkit-transform: translateY(0.5rem);
+        -ms-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+    -webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+    transition: opacity 0.25s, -webkit-transform 0.25s;
+    transition: transform 0.25s, opacity 0.25s;
+    transition: transform 0.25s, opacity 0.25s, -webkit-transform 0.25s; }
+  /* line 58, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+  .page-nav ul li a:hover:after, .page-nav ul li a:focus:after, .page-nav ul li a:active:after {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0); }
+  /* line 65, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+  .page-nav ul li a[href^="http"] {
+    color: #505156; }
+
+/* line 72, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_header.scss */
+.bgslide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: red;
+  opacity: 0; }
+
+/* line 1, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+.page-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #15171E; }
+  @media only screen and (min-width: 500px) {
+    /* line 1, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+    .page-hero {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/* line 15, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+.media-wrapper,
+.page-hero video,
+.page-hero canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+.media-wrapper {
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FD0000), color-stop(#FDA800), to(#FDFD00));
+  background-image: linear-gradient(#FD0000, #FDA800, #FDFD00);
+  background-size: 100%; }
+
+/* line 32, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+.page-hero video,
+.page-hero canvas {
+  object-fit: cover;
+  mix-blend-mode: multiply; }
+
+/* line 40, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+.hero-caption {
+  position: relative;
+  width: 100%;
+  padding-bottom: 2rem;
+  text-align: center; }
+  @media only screen and (min-width: 500px) {
+    /* line 40, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+    .hero-caption {
+      width: 50%;
+      text-align: left; } }
+
+/* line 52, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+.hero-caption h2,
+.hero-caption h3 {
+  font-size: 1.5rem;
+  line-height: 1.3em; }
+
+/* line 58, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_hero.scss */
+.hero-caption h3 {
+  font-family: 'roboto_monoregular', Arial, sans-serif;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 1, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+.page-footer {
+  position: relative;
+  background-color: #101117; }
+
+/* line 6, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+.page-footer .content {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem; }
+
+/* line 11, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+.footer-socials,
+.praise-the-lord {
+  border-top: 2px solid #15171E; }
+
+/* line 16, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+.footer-socials {
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+/* line 21, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+.footer-socials ul {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-right: 2px solid #15171E;
+  border-left: 2px solid #15171E; }
+
+/* line 31, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+.footer-socials ul li {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  border-right: 2px solid #15171E; }
+  /* line 35, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+  .footer-socials ul li:last-child {
+    border-right: none; }
+
+/* line 40, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+.footer-socials ul li a {
+  display: block;
+  padding: 3.5rem 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: 9999999px;
+  overflow: hidden;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 2rem auto;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s; }
+  /* line 50, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+  .footer-socials ul li a:hover {
+    -webkit-box-shadow: 0 5px 50px -5px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 5px 50px -5px rgba(0, 0, 0, 0.4); }
+
+/* line 56, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_footer.scss */
+.praise-the-lord {
+  padding-top: 15vw;
+  padding-bottom: 16vw;
+  text-align: center; }
+
+/* line 3, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.lightshow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 5; }
+
+/* line 13, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.section-form .lightshow {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+/* line 17, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+span[class*="light-"] {
+  width: 8.33333%;
+  height: 3px;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-1 {
+  color: #FD0000;
+  background-color: #FD0000; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-2 {
+  color: #FD7300;
+  background-color: #FD7300; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-3 {
+  color: #FDA800;
+  background-color: #FDA800; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-4 {
+  color: #FDD100;
+  background-color: #FDD100; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-5 {
+  color: #FDFD00;
+  background-color: #FDFD00; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-6 {
+  color: #9DEC00;
+  background-color: #9DEC00; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-7 {
+  color: #00CA00;
+  background-color: #00CA00; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-8 {
+  color: #009797;
+  background-color: #009797; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-9 {
+  color: #113FA9;
+  background-color: #113FA9; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-10 {
+  color: #3813AD;
+  background-color: #3813AD; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-11 {
+  color: #A0038B;
+  background-color: #A0038B; }
+
+/* line 26, /Users/Hornebom/Desktop/jobs/NerdDisco/nerdisco-website-2016/public/scss/_lightshow.scss */
+.light-12 {
+  color: #CB0073;
+  background-color: #CB0073; }
+
+/*# sourceMappingURL=styles.css.map */

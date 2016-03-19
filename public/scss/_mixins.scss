@@ -1,0 +1,72 @@
+/////////////////////////////
+// F O N T   M I X I N S
+/////////////////////////////
+
+@mixin Reg {
+  font-family: 'robotoregular', Arial, sans-serif;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin MonoReg {
+  font-family: 'roboto_monoregular', Arial, sans-serif;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin MonoBold {
+  font-family: 'roboto_monobold', Arial, sans-serif;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/////////////////////////////
+// B R E A K P O I N T S
+/////////////////////////////
+
+$bpMedium: 500px;
+
+@mixin bpMedium {
+  @media only screen and (min-width: #{$bpMedium}) {
+    @content;
+  }
+}
+
+
+/////////////////////////////
+// F O N T   S M O O T H I N G
+/////////////////////////////
+
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+// dark on light
+// @include font-smoothing(off);
+
+// light on dark
+// @include font-smoothing(on);
+
+
+/////////////////////////////
+// H I D E   T E X T
+/////////////////////////////
+
+@mixin hideText() {
+  font-size: 0;
+  line-height: 0;
+  text-indent: 9999999px;
+  overflow: hidden;
+}

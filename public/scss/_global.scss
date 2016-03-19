@@ -1,0 +1,173 @@
+// resets
+// font basic styles
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: $dark;
+}
+
+body {
+  position: relative;
+  @include MonoReg;
+  font-size: 0.8rem;
+  color: $white;
+  @include font-smoothing(on);
+
+  @include bpMedium {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include MonoBold;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+
+  @include bpMedium {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  position: relative;
+  color: $white;
+  text-decoration: none;
+  animation: 0.5s linear 0s infinite normal both paused hueShift;
+  transition: color 0.25s;
+
+  &:hover {
+    color: $red;
+    animation-play-state: running;
+  }
+}
+
+.muted {
+  color: $dark-muted;
+}
+
+em {
+  font-style: normal;
+  color: $orange;
+}
+
+
+// .cta {
+//   position: relative;
+//   display: inline-block;
+//   padding: 1rem 2rem;
+//
+//   &:before,
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     background-repeat: no-repeat;
+//     transition: background-position 0.5s;
+//   }
+//
+//   &:before {
+//     top: 0;
+//     right: 4px;
+//     bottom: 0;
+//     left: 4px;
+//     background-image:
+//       linear-gradient(90deg, $colors),
+//       linear-gradient(90deg, $colors);
+//     background-size: 1200% 3px;
+//     background-position: 0 0, 100% 100%;
+//   }
+//
+//   &:after {
+//     top: 4px;
+//     right: 0;
+//     bottom: 4px;
+//     left: 0;
+//     background-image:
+//       linear-gradient($colors),
+//       linear-gradient($colors);
+//     background-size: 3px 1200%;
+//     background-position: 0 0, 100% 100%;
+//   }
+//
+//   &:hover:before {
+//     background-position: 100% 0, 0 100%;
+//   }
+//
+//   &:hover:after {
+//     background-position: 0 100%, 100% 0;
+//   }
+// }
+
+
+
+.cta {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem;
+  @include MonoBold;
+  background-image:
+    linear-gradient(90deg,$red, $citron),
+    linear-gradient($citron, $leaf),
+    linear-gradient(90deg, $lila, $leaf),
+    linear-gradient($red, $lila);
+  background-size:
+    100% 3px,
+    3px 90%,
+    100% 3px,
+    3px 90%;
+  background-position:
+    0 0,
+    100% 50%,
+    0 100%,
+    0 50%;
+  background-repeat: no-repeat;
+  filter: hue-rotate(0deg);
+  animation: 0.5s linear 0s infinite normal both paused hueShift;
+  transition:
+    background-size 0.1s;
+
+  &:hover {
+    color: $white;
+    background-size:
+      100% 6px,
+      6px 90%,
+      100% 6px,
+      6px 90%;
+    animation-play-state: running;
+  }
+}
+
+@keyframes hueShift {
+  100% { filter: hue-rotate(360deg); }
+}

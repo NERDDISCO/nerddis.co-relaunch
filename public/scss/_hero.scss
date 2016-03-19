@@ -1,0 +1,60 @@
+.page-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: $dark;
+
+  @include bpMedium {
+    justify-content: center;
+  }
+}
+
+.media-wrapper,
+.page-hero video,
+.page-hero canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media-wrapper {
+  overflow: hidden;
+  background-image: linear-gradient($red, $orange, $citron);
+  background-size: 100%;
+}
+
+.page-hero video,
+.page-hero canvas {
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+
+
+.hero-caption {
+  position: relative;
+  width: 100%;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  @include bpMedium {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.hero-caption h2,
+.hero-caption h3 {
+  font-size: 1.5rem;
+  line-height: 1.3em;
+}
+
+.hero-caption h3 {
+  @include MonoReg;
+}

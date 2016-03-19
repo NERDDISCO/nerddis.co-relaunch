@@ -1,0 +1,80 @@
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 1rem 1rem 0 1rem;
+  padding: 0.8rem;
+  z-index: 20;
+  // overflow: hidden;
+
+  background-color: rgba(white, 0.2);
+}
+
+.page-titel {
+  @include hideText();
+  display: block;
+  width: 85px;
+  height: 40px;
+  background-image: url(../media/nerddisco-logo.svg);
+  background-size: auto 100%;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+
+.page-nav {
+  position: relative;
+}
+
+.page-nav ul li {
+  display: inline-block;
+  padding-right: 0.2rem;
+
+  @include bpMedium {
+    padding-right: 1rem;
+  }
+}
+
+.page-nav ul li a {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -0.4rem;
+    left: 0;
+    height: 1px;
+    background-color: $dark-muted;
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: transform 0.25s, opacity 0.25s;
+  }
+
+  &:hover:after,
+  &:focus:after,
+  &:active:after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &[href^="http"] {
+    color: $dark-muted;
+  }
+}
+
+
+
+.bgslide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  // height: 120%;
+  background-color: red;
+  opacity: 0;
+}

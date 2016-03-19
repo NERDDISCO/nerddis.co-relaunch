@@ -1,0 +1,91 @@
+*[class*="section-"] {
+  position: relative;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  background-image:
+    linear-gradient($dark 20%, rgba($dark, 0)),
+    linear-gradient(rgba($dark, 0), $dark 90%),
+    linear-gradient($dark-muted, $dark-muted);
+  background-size:
+    10px 10rem,
+    10px 10rem,
+    1px 100%;
+  background-position:
+    50% 0,
+    50% 100%,
+    50% 50%;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 1rem;
+
+  @include bpMedium {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+*[class*="col-"] {
+  @include bpMedium {
+    // width: calc(50% - 2rem);
+    width: 50%;
+  }
+}
+
+.copy {
+  margin-bottom: 6rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.copy-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid $dark-muted;
+}
+
+.col-left .copy h3,
+.col-left .copy h6,
+.col-left .copy ul,
+.col-left .copy p {
+  padding-right: 2rem;
+}
+
+.col-right .copy h3,
+.col-right .copy h6,
+.col-right .copy ul,
+.col-right .copy p {
+  padding-left: 2rem;
+}
+
+
+.events-list {
+  margin-bottom: 2.5rem;
+}
+
+.events-list li {
+  position: relative;
+  padding-left: 1rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+}
+
+.events-list.muted li:before {
+  background-color: $dark-muted;
+}

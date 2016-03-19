@@ -1,0 +1,30 @@
+$lights: 12;
+
+.lightshow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+}
+
+.section-form .lightshow {
+  transform: rotate( 180deg );
+}
+
+span[class*="light-"] {
+  width: (100/$lights) * 1%;
+  height: 3px;
+  box-shadow: 0 0 0 0;
+  // box-shadow: 0 0 17px 2px;
+}
+
+// nth($list, 1) -> "item-1"
+@for $i from 1 through $lights {
+  .light-#{$i} {
+    color: nth($colors, $i);
+    background-color: nth($colors, $i);
+  }
+}
