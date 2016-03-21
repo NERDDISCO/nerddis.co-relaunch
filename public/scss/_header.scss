@@ -28,7 +28,10 @@
 
 .page-nav {
   position: relative;
+  width: calc( 100% - 90px );
 }
+
+.page-nav ul { text-align: right; }
 
 .page-nav ul li {
   display: inline-block;

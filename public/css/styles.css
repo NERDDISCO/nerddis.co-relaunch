@@ -28,13 +28,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-/* line 11, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 12, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 html,
 body {
   width: 100%;
   background-color: #15171E; }
 
-/* line 17, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 18, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 body {
   position: relative;
   font-family: 'roboto_monoregular', Arial, sans-serif;
@@ -46,12 +46,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   @media only screen and (min-width: 500px) {
-    /* line 17, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+    /* line 18, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
     body {
       font-size: 1rem;
       line-height: 1.6rem; } }
 
-/* line 30, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 31, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 h1,
 h2,
 h3,
@@ -63,29 +63,29 @@ h6 {
   font-weight: normal;
   font-style: normal; }
 
-/* line 39, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 40, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 h3 {
   margin-bottom: 1rem;
   font-size: 1.5rem; }
 
-/* line 44, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 45, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 h6 {
   font-size: 0.8rem; }
   @media only screen and (min-width: 500px) {
-    /* line 44, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+    /* line 45, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
     h6 {
       font-size: 1rem;
       line-height: 1.6rem; } }
 
-/* line 55, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 56, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 ul {
   list-style-type: none; }
 
-/* line 59, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 60, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 p {
   margin-bottom: 1rem; }
 
-/* line 63, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 64, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 a {
   position: relative;
   color: #d0d1d2;
@@ -94,22 +94,22 @@ a {
           animation: 0.5s linear 0s infinite normal both paused hueShift;
   -webkit-transition: color 0.25s;
   transition: color 0.25s; }
-  /* line 70, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+  /* line 71, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
   a:hover {
     color: #FD0000;
     -webkit-animation-play-state: running;
             animation-play-state: running; }
 
-/* line 76, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 77, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 .muted {
   color: #505156; }
 
-/* line 80, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 81, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 em {
   font-style: normal;
   color: #FDA800; }
 
-/* line 86, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+/* line 87, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
 .cta {
   position: relative;
   display: inline-block;
@@ -122,7 +122,7 @@ em {
           filter: hue-rotate(0deg);
   -webkit-animation: 0.5s linear 0s infinite normal both paused hueShift;
           animation: 0.5s linear 0s infinite normal both paused hueShift; }
-  /* line 94, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+  /* line 95, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
   .cta:before {
     content: '';
     position: absolute;
@@ -130,6 +130,7 @@ em {
     right: 0;
     bottom: 0;
     left: 0;
+    border-style: solid;
     border-width: 3px;
     border-color: transparent;
     -webkit-border-image: linear-gradient(135deg, #A0038B, #FD0000, #FDFD00);
@@ -137,12 +138,12 @@ em {
     border-image-slice: 1;
     -webkit-transition: border-width 0.25s;
     transition: border-width 0.25s; }
-  /* line 108, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+  /* line 110, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
   .cta:hover {
     color: #d0d1d2;
     -webkit-animation-play-state: running;
             animation-play-state: running; }
-    /* line 112, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
+    /* line 114, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_global.scss */
     .cta:hover:before {
       border-width: 6px; }
 
@@ -280,7 +281,7 @@ em {
 .page-titel {
   font-size: 0;
   line-height: 0;
-  text-indent: 9999999px;
+  text-indent: -9999999px;
   overflow: hidden;
   display: block;
   width: 85px;
@@ -292,21 +293,26 @@ em {
 
 /* line 29, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
 .page-nav {
-  position: relative; }
+  position: relative;
+  width: calc( 100% - 90px); }
 
-/* line 33, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
+/* line 34, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
+.page-nav ul {
+  text-align: right; }
+
+/* line 36, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
 .page-nav ul li {
   display: inline-block;
   padding-right: 0.2rem; }
   @media only screen and (min-width: 500px) {
-    /* line 33, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
+    /* line 36, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
     .page-nav ul li {
       padding-right: 1rem; } }
 
-/* line 42, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
+/* line 45, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
 .page-nav ul li a {
   position: relative; }
-  /* line 45, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
+  /* line 48, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
   .page-nav ul li a:after {
     content: '';
     position: absolute;
@@ -323,17 +329,17 @@ em {
     transition: opacity 0.25s, -webkit-transform 0.25s;
     transition: transform 0.25s, opacity 0.25s;
     transition: transform 0.25s, opacity 0.25s, -webkit-transform 0.25s; }
-  /* line 58, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
+  /* line 61, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
   .page-nav ul li a:hover:after, .page-nav ul li a:focus:after, .page-nav ul li a:active:after {
     opacity: 1;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0); }
-  /* line 65, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
+  /* line 68, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
   .page-nav ul li a[href^="http"] {
     color: #505156; }
 
-/* line 72, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
+/* line 75, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_header.scss */
 .bgslide {
   position: absolute;
   top: 0;
@@ -345,7 +351,7 @@ em {
 /* line 1, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_hero.scss */
 .page-hero {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -473,7 +479,7 @@ em {
   padding: 3.5rem 0;
   font-size: 0;
   line-height: 0;
-  text-indent: 9999999px;
+  text-indent: -9999999px;
   overflow: hidden;
   background-position: 50%;
   background-repeat: no-repeat;
