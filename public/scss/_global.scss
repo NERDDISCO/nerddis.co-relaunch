@@ -83,88 +83,37 @@ em {
 }
 
 
-// .cta {
-//   position: relative;
-//   display: inline-block;
-//   padding: 1rem 2rem;
-//
-//   &:before,
-//   &:after {
-//     content: '';
-//     position: absolute;
-//     background-repeat: no-repeat;
-//     transition: background-position 0.5s;
-//   }
-//
-//   &:before {
-//     top: 0;
-//     right: 4px;
-//     bottom: 0;
-//     left: 4px;
-//     background-image:
-//       linear-gradient(90deg, $colors),
-//       linear-gradient(90deg, $colors);
-//     background-size: 1200% 3px;
-//     background-position: 0 0, 100% 100%;
-//   }
-//
-//   &:after {
-//     top: 4px;
-//     right: 0;
-//     bottom: 4px;
-//     left: 0;
-//     background-image:
-//       linear-gradient($colors),
-//       linear-gradient($colors);
-//     background-size: 3px 1200%;
-//     background-position: 0 0, 100% 100%;
-//   }
-//
-//   &:hover:before {
-//     background-position: 100% 0, 0 100%;
-//   }
-//
-//   &:hover:after {
-//     background-position: 0 100%, 100% 0;
-//   }
-// }
-
-
-
 .cta {
   position: relative;
   display: inline-block;
   padding: 1rem 2rem;
   @include MonoBold;
-  background-image:
-    linear-gradient(90deg,$red, $citron),
-    linear-gradient($citron, $leaf),
-    linear-gradient(90deg, $lila, $leaf),
-    linear-gradient($red, $lila);
-  background-size:
-    100% 3px,
-    3px 90%,
-    100% 3px,
-    3px 90%;
-  background-position:
-    0 0,
-    100% 50%,
-    0 100%,
-    0 50%;
-  background-repeat: no-repeat;
   filter: hue-rotate(0deg);
   animation: 0.5s linear 0s infinite normal both paused hueShift;
-  transition:
-    background-size 0.1s;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-width: 3px;
+    border-color: transparent;
+    border-image: linear-gradient(135deg,$purple, $red, $citron);
+    border-image-slice: 1;
+    transition: border-width 0.25s;
+  }
 
   &:hover {
     color: $white;
-    background-size:
-      100% 6px,
-      6px 90%,
-      100% 6px,
-      6px 90%;
     animation-play-state: running;
+
+    &:before {
+      border-width: 6px;
+    }
+
+
   }
 }
 
