@@ -468,6 +468,7 @@ em {
 
 /* line 40, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
 .footer-socials ul li a {
+  position: relative;
   display: block;
   padding: 3.5rem 0;
   font-size: 0;
@@ -476,44 +477,40 @@ em {
   overflow: hidden;
   background-position: 50%;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.8);
   opacity: 0.4;
-  -webkit-transition: opacity 0.2s, -webkit-box-shadow 0.2s;
-  transition: opacity 0.2s, -webkit-box-shadow 0.2s;
-  transition: box-shadow 0.2s, opacity 0.2s;
-  transition: box-shadow 0.2s, opacity 0.2s, -webkit-box-shadow 0.2s;
-  -webkit-filter: none;
-          filter: none; }
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-transition: opacity 1s, -webkit-box-shadow 0.5s;
+  transition: opacity 1s, -webkit-box-shadow 0.5s;
+  transition: opacity 1s, box-shadow 0.5s;
+  transition: opacity 1s, box-shadow 0.5s, -webkit-box-shadow 0.5s; }
   /* line 51, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
   .footer-socials ul li a:hover {
-    -webkit-box-shadow: 0 5px 50px -5px rgba(0, 0, 0, 0.4);
-            box-shadow: 0 5px 50px -5px rgba(0, 0, 0, 0.4);
     opacity: 0.8;
-    -webkit-filter: none;
-            filter: none; }
+    -webkit-box-shadow: 0 0 100px 0 rgba(253, 168, 0, 0.2);
+            box-shadow: 0 0 100px 0 rgba(253, 168, 0, 0.2); }
 
-/* line 58, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
+/* line 57, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
 .icon-twitter {
   background-image: url("../media/icon-twitter.svg");
   background-size: 2rem auto; }
 
-/* line 62, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
+/* line 61, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
 .icon-codepen {
   background-image: url("../media/icon-codepen.svg");
   background-size: 2rem auto; }
 
-/* line 66, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
+/* line 65, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
 .icon-github {
   background-image: url("../media/icon-github.svg");
   background-size: 4rem auto; }
 
-/* line 70, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
+/* line 69, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
 .icon-youtube {
   background-image: url("../media/icon-youtube.svg");
   background-size: 4rem auto; }
 
-/* line 76, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
+/* line 75, /Users/Hornebom/Desktop/jobs/NerdDisco/nerddis.co-relaunch/public/scss/_footer.scss */
 .praise-the-lord {
   padding-top: 15vw;
   padding-bottom: 16vw;
