@@ -51,6 +51,11 @@
   border-bottom: 1px solid $dark-muted;
 }
 
+.copy-header h6 {
+  margin-bottom: 1rem;
+  vertical-align: bottom;
+}
+
 .col-left .copy h3,
 .col-left .copy h6,
 .col-left .copy ul,
@@ -64,6 +69,45 @@
 .col-right .copy p {
   padding-left: 2rem;
 }
+
+
+
+
+
+
+.built-assets ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.built-assets ul li a {
+  display: block;
+  height: 3rem;
+  margin-right: 1.8rem;
+  @include hideText();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  opacity: 0.4;
+  filter: none;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.8;
+    filter: none;
+  }
+}
+
+.built-assets ul li:last-child a { margin-right: 0; }
+
+.icon-nodejs { width: 4.2rem; }
+.icon-raspberrypi { width: 2.3rem; }
+.icon-midi { width: 2.7rem; }
+
+
+
+
+
 
 
 .events-list {

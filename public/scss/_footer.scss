@@ -44,32 +44,17 @@
   @include hideText;
   background-position: 50%;
   background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1px rgba($orange, 0);
   opacity: 0.4;
   animation-duration: 1s;
   transition: opacity 1s, box-shadow 0.5s;
 
-  &:hover {
-    opacity: 0.8;
-    box-shadow: 0 0 100px 0 rgba($orange, 0.2);
+  &:hover {;
+    opacity: 1;
+    box-shadow: inset 0 0 0 1px rgba($orange, 0.5);
   }
 }
 
-.icon-twitter {
-  background-image: url("../media/icon-twitter.svg");
-  background-size: 2rem auto;
-}
-.icon-codepen {
-  background-image: url("../media/icon-codepen.svg");
-  background-size: 2rem auto;
-}
-.icon-github {
-  background-image: url("../media/icon-github.svg");
-  background-size: 4rem auto;
-}
-.icon-youtube {
-  background-image: url("../media/icon-youtube.svg");
-  background-size: 4rem auto;
-}
 
 
 .praise-the-lord {
