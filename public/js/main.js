@@ -32,24 +32,20 @@ function addLightShow(elem) {
 
 function revealNav(scroll_pos) {
   var  scrollT = body.scrollTop;
-  console.log(scrollT);
-  // console.log(headerHeight);
-  var b = wH - (headerHeight);
-  var t = wH;
-  var h = scroll_pos - wH + headerHeight; // t - scroll_pos
 
-  bgSlide.style.top = scrollT + wH + "px"
+  var tl = new TimelineMax();
+  if( scroll_pos > wH ) {
+    tl.to( bgSlide, 1.8, {
+      bottom: 0,
+      ease: Expo.easeOut
+    })
+  } else {
+    tl.to( bgSlide, 1.5, {
+      bottom: headerHeight,
+      ease: Expo.easeIn
+    })
+  }
 
-  // if( scroll_pos > b  && scroll_pos < t ) {
-    // console.log(headerHeight);
-    // bgSlide.style.top = scroll_pos - wH + "px"
-    // console.log(headerHeight);
-    // console.log(wH);
-    // console.log(scroll_pos);
-  // }
-  // if ( scroll_pos > t ) {
-  //   console.log("stop");
-  // }
 }
 
 
@@ -69,11 +65,12 @@ function init() {
   addLightShow(sectionDemo);
   addLightShow(sectionForm);
   addLightShow(pageFooter);
+
   heroVideo.play();
+
   headerHeight = pageHeader.offsetHeight;
-  bgSlide.style.top = wH + "px";
   bgSlide.style.height = headerHeight + "px";
-  bgSlide.style.opacity = "0.3";
+  bgSlide.style.bottom = headerHeight + "px";
 }
 
 
