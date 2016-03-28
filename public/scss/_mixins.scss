@@ -70,3 +70,24 @@ $bpMedium: 500px;
   text-indent: -9999999px;
   overflow: hidden;
 }
+
+
+
+
+/////////////////////////////
+// A R R O W   T O P
+/////////////////////////////
+
+@mixin arrTop($arrSize) {
+  content: '';
+  position: absolute;
+  top: -$arrSize;
+  left: 50%;
+  width: $arrSize;
+  height: $arrSize;
+  margin-left: -0.0315rem;
+  border-bottom: 1px solid $dark-muted;
+  border-left: 1px solid $dark-muted;
+  transform-origin: 0 100%;
+  transform: rotate(-45deg);
+}

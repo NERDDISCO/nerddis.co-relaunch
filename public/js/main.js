@@ -30,23 +30,33 @@ function addLightShow(elem) {
 
 
 
-function revealNav(scroll_pos) {
-  var  scrollT = body.scrollTop;
+// function revealNav(scroll_pos) {
+//   var scrollT = body.scrollTop;
+//   var navBool = false;
+//   var tl = new TimelineMax();
+//
+//   if( scroll_pos > wH ) {
+//     navBool = true;
+//   } else {
+//     navBool = false;
+//   }
+//
+//   if (navBool = true) {
+//     tl.to( bgSlide, 1.8, {
+//       bottom: 0,
+//       ease: Expo.easeOut
+//     })
+//   }
+//   if (navBool = false) {
+//     tl.to( bgSlide, 1.5, {
+//       bottom: headerHeight,
+//       ease: Expo.easeIn
+//     })
+//   }
+//
+// }
 
-  var tl = new TimelineMax();
-  if( scroll_pos > wH ) {
-    tl.to( bgSlide, 1.8, {
-      bottom: 0,
-      ease: Expo.easeOut
-    })
-  } else {
-    tl.to( bgSlide, 1.5, {
-      bottom: headerHeight,
-      ease: Expo.easeIn
-    })
-  }
 
-}
 
 
 
@@ -105,7 +115,7 @@ window.addEventListener('scroll', function(e) {
   scrollPos = window.scrollY;
   if (!ticking) {
     window.requestAnimationFrame(function() {
-      revealNav(scrollPos);
+      // revealNav(scrollPos);
       ticking = false;
     });
   }

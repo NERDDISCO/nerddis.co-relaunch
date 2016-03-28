@@ -17,7 +17,7 @@ $lila:   #3813AD;
 $purple: #A0038B;
 $pink:   #CB0073;
 
-// shapes
+// shades
 $dark-muted: mix(white, $dark, 25%);
 $darker: mix(black, $dark, 25%);
 
@@ -41,3 +41,14 @@ $colors:
 /////////////////////////////
 
 $max-width: 70rem;
+
+
+
+
+
+/////////////////////////////
+// E A S I N G S
+/////////////////////////////
+
+$easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);

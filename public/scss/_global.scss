@@ -38,8 +38,9 @@ h6 {
 }
 
 h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
   font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h6 {
@@ -65,12 +66,14 @@ a {
   position: relative;
   color: $white;
   text-decoration: none;
-  animation: 0.5s linear 0s infinite normal both paused hueShift;
   transition: color 0.25s;
 
   &:hover {
-    color: $red;
-    animation-play-state: running;
+    color: $dark-muted;
+  }
+
+  &.muted:hover {
+    color: $white;
   }
 }
 

@@ -36,6 +36,7 @@
 .cta {
   position: relative;
   display: inline-block;
+  margin-top: 2rem;
   padding: 1rem 2rem;
   @include MonoBold;
   filter: hue-rotate(0deg);
@@ -68,4 +69,22 @@
 
 @keyframes hueShift {
   100% { filter: hue-rotate(360deg); }
+}
+
+
+.ghost {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid $dark-muted;
+  transition: border-bottom 0.25s;
+
+  &:hover {
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+
+  &.muted:hover {
+    color: $dark-muted;
+  }
 }
